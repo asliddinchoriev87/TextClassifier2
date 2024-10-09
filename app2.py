@@ -3,7 +3,7 @@ import streamlit as st
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Load your pre-trained NMF model and vectorizer
-with open('text_classify_model.pkl', 'rb') as model_file:
+with open('nmf_model.pkl', 'rb') as model_file:
     nmf_model = pickle.load(model_file)
 
 with open('tfidf_vectorizer.pkl', 'rb') as vectorizer_file:

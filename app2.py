@@ -10,7 +10,7 @@ with open('tfidf_vectorizer.pkl', 'rb') as vectorizer_file:
     vectorizer = pickle.load(vectorizer_file)
 
 # Topic-to-category mapping
-topics_to_categories = {0: "Government", 1: "Military", 2: "Culture", 3: "Sports", 4: "Other"}
+topics_to_categories = {0: "Technology", 1: "Politics", 2: "Entertainment", 3: "Sports", 4: "Business"}
 
 # Streamlit App
 st.title("News Text Classification")
